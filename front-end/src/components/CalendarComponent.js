@@ -7,9 +7,9 @@ function CalendarComponent({ onDateChange }) {
 
   useEffect(() => {
     if (onDateChange) {
-      onDateChange(date); // call once when component loads
+      onDateChange(date); // call when component loads or when date/onDateChange changes
     }
-  }, []);
+  }, [date, onDateChange]);
 
   const onChange = (newDate) => {
     setDate(newDate);

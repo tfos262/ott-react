@@ -19,7 +19,7 @@ const AdminDashboard = () => {
     const [error, setError] = React.useState('');
     const [inputIds, setInputIds] = React.useState({});
     const [showDatePickerIdx, setShowDatePickerIdx] = React.useState(null);
-    const [showEmailPickerIdx, setShowEmailPickerIdx] = React.useState(null);
+    // const [showEmailPickerIdx, setShowEmailPickerIdx] = React.useState(null);
     const [selectedDate, setSelectedDate] = React.useState('');
 
     const queries = [
