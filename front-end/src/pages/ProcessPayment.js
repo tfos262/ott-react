@@ -14,7 +14,7 @@ const ProcessPayment = async (cardName, amount, cardNumber, expiry, cvv) => {
     };
 
 
-    const response = await axios.post(`${process.env.REACT_APP_API_URL}/update_payment`, payload);
+    await axios.post(`${process.env.REACT_APP_API_URL}/update_payment`, payload);
 
     alert('Payment processed!');
   } catch (err) {

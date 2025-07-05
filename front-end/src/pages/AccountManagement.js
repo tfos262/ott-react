@@ -38,7 +38,7 @@ const AccountManagement = () => {
             }
         };
         fetchUserDetails();
-    }, []);
+    }, [token]);
 
     // should make the MySQL change to customer table, then route to tee_times
 const handleSubmit = async (e) => {

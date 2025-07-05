@@ -16,7 +16,8 @@ test.describe('Authenticated User Login Tests', () => {
 
     test('authenticated user has logout navbar item', async ({ page }) => {
         // await expect(page).toHaveURL('http://localhost:3000/tee_times');
-        await expect(page.getByRole('button', { name: /logout/i })).toBeVisible();
+        const { screen } = require('@testing-library/playwright');
+        await expect(screen.getByRole('button', { name: /logout/i })).toBeVisible();
     });
 
 
